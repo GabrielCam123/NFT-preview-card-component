@@ -1,0 +1,96 @@
+:root{
+    /*--paragrap--*/
+    --Font-size:18px;
+    --Soft-blue:hsl(215, 51%, 70%);
+    --Cyan:hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --font-family: 'Outfit', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+body{
+    background-color: var(--Very-dark-blue-main);
+    width: 100vw;
+    height: 100vh;
+}
+.card{
+    position: absolute;
+    width: 250px;
+    height: 450px;
+    background-color: var(--Very-dark-blue-card);
+    top: 100px;
+    left: 550px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+}
+.image-nft{
+    /*padding: 10px;*/
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+}
+.n_descrip{
+    font-family: var(--font-family);
+}
+.n_descrip p:nth-child(1){
+    color:var(--White);
+    font-weight: 600;
+    margin-top: 10px;
+}
+.n_descrip p:nth-child(2){
+    color:var(--Soft-blue);
+    font-weight: 300;
+    margin-top: 10px;
+}
+.pre_tiempo{
+    font-family: var(--Font-size);
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.pre_tiempo div:nth-child(1){
+    display: flex;
+    gap: 10px;
+    color: var(--Cyan);
+    font-weight: 300;
+}
+.pre_tiempo div:nth-child(2){
+    display: flex;
+    gap: 10px;
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+.creador{
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    font-size:13px;
+    align-items: center;
+    border-top: 1px solid var(--Very-dark-blue-line);
+}
+.creador img:nth-child(1){
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    border-color: var(--White);
+    height: 30px;
+    width: 30px;
+}
+.creador p:nth-child(2){
+    font-family: var(--font-family);
+    color: var(--Soft-blue);
+    font-weight: 300;
+}
+.creador p:nth-child(3){
+    font-family: var(--font-family);
+    color: var(--White);
+    font-weight: 300;
+}
