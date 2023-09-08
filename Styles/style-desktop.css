@@ -32,9 +32,29 @@ body{
 }
 .image-nft{
     /*padding: 10px;*/
-    width: 100%;
-    height: 250px;
     border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.image-nft::after{
+    --Cyan2:hsla(178, 100%, 50%,0.5);
+    background:var(--Cyan2);
+    content: url(/images/icon-view.svg);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: all .5s ease;  
+}
+.image-nft:hover::after{
+    opacity: 1;
+}
+.image-nft img{
+    width: 100%;
+    display: block;
 }
 .n_descrip{
     font-family: var(--font-family);
